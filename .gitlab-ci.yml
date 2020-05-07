@@ -43,7 +43,6 @@ pages:
 
 update-algolia:
   image: node:latest
-  stage: deploy-algolia
   script:
     - npm install
     - npm run algolia
