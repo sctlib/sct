@@ -1,0 +1,51 @@
+stages:
+  - test-build
+  - build-site
+  - deploy-site
+  # - deploy-algolia
+
+default:
+  # All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
+  image: registry.gitlab.com/pages/hugo:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_PARAMS_GITPROJECTURL: https://gitlab.com/sctlib/sct
+  # ALGOLIA_APP_ID: F7KC7JNIA2
+  # ALGOLIA_INDEX_NAME: sctlib
+  # ALGOLIA_INDEX_FILE: public/algolia.json
+
+test:
+  stage: test-build
+  script:
+  - hugo --baseURL="https://example.com"
+  except:
+  - master
+
+build:
+  stage: build-site
+  script:
+  - hugo --baseURL="https://sctlib.gitlab.io/sct"
+  artifacts:
+    paths:
+    - public
+
+pages:
+  stage: deploy-site
+  script:
+    - echo "Deploying to Gitlab page"
+    - ls -la public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
+update-algolia:
+  image: node:latest
+  stage: deploy-algolia
+  script:
+    - npm install
+    - npm run algolia
+  only:
+  - master
