@@ -2,7 +2,7 @@ stages:
   - test-build
   - build-site
   - deploy-site
-  # - deploy-algolia
+  - deploy-algolia
 
 default:
   # All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
@@ -43,8 +43,9 @@ pages:
 
 update-algolia:
   image: node:latest
+  stage: deploy-algolia
   script:
     - npm install
     - npm run algolia
   only:
-  - master
+  - remove-me-fake-branch/master
