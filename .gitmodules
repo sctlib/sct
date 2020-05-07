@@ -1,3 +1,3 @@
 [submodule "themes/index-theme"]
 	path = themes/index-theme
-	url = git@gitlab.com:sctlib/index-theme
+	url = https://gitlab.com/sctlib/index-theme.git
