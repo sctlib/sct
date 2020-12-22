@@ -19,7 +19,7 @@ const companies  = {
     name: 'companies',
     label: 'Companies',
     label_singular: 'Company',
-    folder: 'companies',
+    folder: 'content/companies',
     media_folder: '',
     path: '{{slug}}/index',
     create: true,

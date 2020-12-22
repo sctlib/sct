@@ -6,7 +6,7 @@ const goals  = {
     name: 'goals',
     label: 'Goals',
     label_singular: 'Goal',
-    folder: 'goals',
+    folder: 'content/goals',
     media_folder: '',
     path: '{{slug}}/index',
     create: true,

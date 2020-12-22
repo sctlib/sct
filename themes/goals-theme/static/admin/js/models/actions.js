@@ -6,7 +6,7 @@ const actions  = {
     name: 'actions',
     label: 'Actions',
     label_singular: 'Action',
-    folder: 'actions',
+    folder: 'content/actions',
     media_folder: '',
     path: '{{slug}}/index',
     create: true,
