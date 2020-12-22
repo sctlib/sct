@@ -1,4 +1,4 @@
-baseURL = "https://sctlib.github.io/"
+baseURL = "https://sctlib.github.io/sct"
 languageCode = "en-us"
 title = "sct"
 theme = "index-theme"
