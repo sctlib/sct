@@ -1,5 +1,9 @@
 .Card {}
 
+.Card--goal {
+    margin-bottom: calc(var(--size) * 2);
+}
+
 .Card--action {
     background-color: var(--color-bg-light);
     padding: var(--size);
