@@ -9,6 +9,11 @@ editNetlifyCmsUrl = "/edit/#/collections"
 
 [menu]
 [[menu.main]]
+name = "Sct"
+url = "/"
+weight = -120
+
+[[menu.main]]
 name = "Goals"
 url = "/goals"
 weight = -110
@@ -18,7 +23,7 @@ name = "Actions"
 url = "/actions"
 weight = -100
 
-[[menu.main]]
-name = "Notes"
-url = "/notes"
-weight = -90
+# [[menu.main]]
+# name = "Notes"
+# url = "/notes"
+# weight = -90

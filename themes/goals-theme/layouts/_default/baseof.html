@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+
+    {{- partial "site/head" . }}
+
+    <body>
+	<div class="Site">
+	    <header class="Site-header">
+		{{- partial "site/header" . }}
+	    </header>
+
+	    <main class="Site-main">
+		{{- block "main" . }}
+		{{- end }}
+	    </main>
+
+	    {{- partial "site/foot" . }}
+	</div>
+    </body>
+</html>

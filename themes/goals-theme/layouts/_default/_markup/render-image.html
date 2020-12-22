@@ -1,0 +1,5 @@
+<img
+  src='{{delimit (slice "../" .Destination) "" | safeURL}}'
+  alt='{{ .Text }}'
+  {{ with .Title}} title="{{ . }}"{{ end }}
+/>
