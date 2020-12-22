@@ -1,5 +1,9 @@
 ---
 title: sct
+slug: sct
+description: sctlib?
+date_created: 2020-12-23
+date_updated: 2020-12-23
 ---
 
 > A society is a group of individuals involved in persistent social
