@@ -3,6 +3,5 @@ export default {
     name: 'body',
     widget: 'markdown',
     required: false,
-    hint: 'A short introcution text; how would you describe this item?',
-    /* minimal: true, */
+    hint: 'A markdown text area, where you can visually format text, insert images, write html (raw mode).'
 }

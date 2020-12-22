@@ -1,6 +1,7 @@
 import title from '../fields/title.js'
 import slug from '../fields/slug.js'
 import description from '../fields/description.js'
+import weight from '../fields/weight.js'
 
 const goals  = {
     name: 'goals',
@@ -17,7 +18,8 @@ const goals  = {
     fields: [
 	title,
 	slug,
-	description
+	description,
+	weight
     ]
 }
 
