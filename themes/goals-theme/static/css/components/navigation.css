@@ -11,6 +11,7 @@ nav {
 @media (min-width: 40rem) {
     nav {
 	flex-direction: column;
+	margin: 0.2rem
     }
     nav-item {
 	width: 100%;
@@ -20,6 +21,9 @@ nav {
 nav-item a {
     display: flex;
     padding: var(--size);
+    backgroud-color: transparent;
+    transition: var(--transition);
+    border-radius: var(--border-radius);
 }
 
 nav-item a:hover {

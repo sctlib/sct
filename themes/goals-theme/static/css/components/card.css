@@ -1,4 +1,6 @@
-.Card {}
+.Card {
+    border-radius: var(--border-radius);
+}
 
 .Card--goal {
     margin-bottom: calc(var(--size) * 2);
