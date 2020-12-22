@@ -1,0 +1,11 @@
+.Card {}
+
+.Card--action {
+    background-color: var(--color-bg-light);
+    padding: var(--size);
+}
+
+.Card--action .Card-link {
+    display: flex;
+    margin-bottom: valc(var(--size) / 2);
+}

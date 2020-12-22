@@ -13,4 +13,5 @@
 
 .Site-main {
     padding: var(--size);
+    width: 100%;
 }
