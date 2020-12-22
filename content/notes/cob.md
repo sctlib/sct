@@ -1,3 +1,6 @@
+---
+title: cob
+---
 Building constructions with cob.
 > cob = pisé = terre paille = béton terre (earth concrete)
 

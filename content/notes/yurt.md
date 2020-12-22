@@ -1,3 +1,6 @@
+---
+title: yurt
+---
 *yurt*
 
 * references

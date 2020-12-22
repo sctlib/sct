@@ -1,3 +1,6 @@
+---
+title: permaculture
+---
 Eco-systems observed and associated.
 
 * Links 

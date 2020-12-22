@@ -1,3 +1,6 @@
+---
+title: sct
+---
 #+TAGS: hello
 Society
 
