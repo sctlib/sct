@@ -1,15 +1,23 @@
 {{ define "main" }}
 
-<article>
-    <aside class="TableOfContents">
-	{{ if and (gt .WordCount 200 ) (ne .Params.toc "false") }}
-	{{.TableOfContents}}
+<article class="Article">
+    <header class="Article-header">
+	<h1 class="Article-title">
+	    <a href="{{ .Permalink }}">
+		{{ .Params.title }}
+	    </a>
+	</h1>
+	{{ with .Params.description }}
+	<p class="Article-description">
+	    {{ . }}
+	</p>
 	{{ end }}
-    </aside>
-
-    <main class="Content">
-	{{ .Content }}
+    </header>
+    {{ with .Content}}
+    <main class="Article-content">
+	{{ . }}
     </main>
+    {{ end }}
 </article>
 
 {{ end }}

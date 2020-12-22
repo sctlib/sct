@@ -2,9 +2,18 @@
 
 {{ with .Pages }}
 {{ range .}}
-<p>
-    {{ .Params.title }}
-</p>
+<article class="Card">
+    <a href="{{ .Permalink }}" class="Card-link">
+	<h2 class="Card-title">
+	    {{ .Params.title }}
+	</h2>
+	{{ with .Params.description }}
+	<p class="Card-description">
+	    {{ . }}
+	</p>
+	{{ end }}
+    </a>
+</article>
 {{ end }}
 {{ end }}
 
