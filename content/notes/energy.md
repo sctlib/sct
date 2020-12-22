@@ -1,5 +1,0 @@
----
-title: energy
----
-* petrol
-* nuclear

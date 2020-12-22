@@ -2,6 +2,8 @@ import title from '../fields/title.js'
 import slug from '../fields/slug.js'
 import description from '../fields/description.js'
 import body from '../fields/body.js'
+import createdDate from '../fields/createdDate.js'
+import updatedDate from '../fields/updatedDate.js'
 
 const notes  = {
     name: 'notes',
@@ -19,7 +21,9 @@ const notes  = {
 	title,
 	slug,
 	description,
-	body
+	body,
+	createdDate,
+	updateDate
     ]
 }
 
