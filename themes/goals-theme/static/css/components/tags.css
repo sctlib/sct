@@ -1,0 +1,11 @@
+.Tag {
+    background-color: transparent;
+    transition: background-color ease-in-out 200ms;
+}
+
+.Tag--category-1 {
+    backgrount-color: var(--color-tag-1)
+}
+.Tag--category-2 {
+    backgrount-color: var(--color-tag-2)
+}

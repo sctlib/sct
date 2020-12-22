@@ -23,12 +23,12 @@ weight = -110
 
 [[menu.main]]
 name = "Actions"
-url = "/actions"
+url = "/actions/"
 weight = -100
 
 [[menu.main]]
 name = "(edit)"
-url = "/admin"
+url = "/edit/"
 weight = -90
 
 # [[menu.main]]

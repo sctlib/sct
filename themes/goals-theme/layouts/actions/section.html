@@ -1,21 +1,29 @@
 {{ define "main" }}
 
 {{ with .Pages }}
-{{ range .}}
-<article class="Card">
-    {{ printf "#%v" . }}
-    <a href="{{ .Permalink }}" class="Card-link">
-	<h2 class="Card-title">
-	    {{ .Params.title }}
-	</h2>
+<div class="List list--actions">
+    {{ range .}}
+    <article class="Card Card--action">
+	<a href="{{ .Permalink }}" class="Card-link">
+	    <h2 class="Card-title">
+		{{ .Params.title }}
+	    </h2>
+	</a>
 	{{ with .Params.description }}
 	<p class="Card-description">
 	    {{ . }}
 	</p>
 	{{ end }}
-    </a>
-</article>
-{{ end }}
+	{{ with .Params.goals }}
+	<p class="Card-goals">
+	    {{ range . }}
+	    <a href="/goals/{{ . }}">{{ . }}</a>
+	    {{ end }}
+	</p>
+	{{ end }}
+    </article>
+    {{ end }}
+</div>
 {{ end }}
 
 {{ end }}

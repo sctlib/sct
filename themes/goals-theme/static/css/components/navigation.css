@@ -4,15 +4,17 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 @media (min-width: 40rem) {
     nav {
 	flex-direction: column;
     }
-}
-
-nav-item {
+    nav-item {
+	width: 100%;
+    }
 }
 
 nav-item a {
