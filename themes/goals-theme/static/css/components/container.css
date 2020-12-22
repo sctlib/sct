@@ -1,0 +1,7 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+.Container--bg {
+    background-color: var(--color-bg-light);
+}
