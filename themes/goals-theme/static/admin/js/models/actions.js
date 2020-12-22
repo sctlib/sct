@@ -1,6 +1,8 @@
 import title from '../fields/title.js'
 import slug from '../fields/slug.js'
 import description from '../fields/description.js'
+import goals from '../fields/actions/goals.js'
+
 
 const actions  = {
     name: 'actions',
@@ -18,6 +20,7 @@ const actions  = {
 	title,
 	slug,
 	description,
+	goals
     ]
 }
 
