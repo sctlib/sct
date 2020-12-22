@@ -23,7 +23,7 @@ const notes  = {
 	description,
 	body,
 	createdDate,
-	updateDate
+	updatedDate
     ]
 }
 
