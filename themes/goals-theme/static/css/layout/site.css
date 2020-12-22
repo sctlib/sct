@@ -14,4 +14,14 @@
 .Site-main {
     padding: var(--size);
     width: 100%;
+    position: relative;
+}
+
+.Site--home .Site-main {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Brassica_napus_%E2%80%94_Flora_Batava_%E2%80%94_Volume_v4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }

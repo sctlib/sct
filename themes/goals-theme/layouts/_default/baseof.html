@@ -4,7 +4,7 @@
     {{- partial "site/head" . }}
 
     <body>
-	<div class="Site">
+	<div class="Site {{ if .IsHome }}Site--home{{ end }}">
 	    <header class="Site-header">
 		{{- partial "site/header" . }}
 	    </header>
