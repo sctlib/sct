@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "sct"
 theme = "goals-theme"
 
+[taxonomies]
+goal = "goals"
+
 [Params]
 editNetlifyCmsUrl = "/edit/#/collections"
 # featured_taxonomies = ["tags", "cities"]

@@ -11,10 +11,7 @@
 {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
 
 {{ end }}
-<nav-item>
-	<a href="{{ .p1.Permalink }}" {{ if eq .p1 .p2 }}{{ end }}>
-		{{ or .p1.Title .p1.File.BaseFileName }}
-	</a>
-</nav-item>
-
+<a href="{{ .p1.Permalink }}" {{ if eq .p1 .p2 }}{{ end }} class="Nav-item">
+    {{ or .p1.Title .p1.File.BaseFileName }}
+</a>
 {{ end }}
