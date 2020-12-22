@@ -6,21 +6,20 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    background-color: var(--color-bg);
 }
 
 @media (min-width: 40rem) {
     nav {
 	flex-direction: column;
-	margin: 0.2rem;
-	position: sticky;
-	top: 0;
-	left: 0;
     }
     nav-item {
 	width: 100%;
     }
 }
-
+nav-item {
+    margin: calc(var(--size) / 2);
+}
 nav-item a {
     display: flex;
     padding: var(--size);
@@ -28,7 +27,9 @@ nav-item a {
     transition: var(--transition);
     border-radius: var(--border-radius);
 }
-
 nav-item a:hover {
+    background-color: var(--color-bg-light);
+}
+nav-item[active] {
     background-color: var(--color-bg-light);
 }

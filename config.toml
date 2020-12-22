@@ -18,7 +18,7 @@ weight = -120
 
 [[menu.main]]
 name = "Goals"
-url = "/goals"
+url = "/goals/"
 weight = -110
 
 [[menu.main]]

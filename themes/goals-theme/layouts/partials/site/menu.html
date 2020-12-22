@@ -1,8 +1,7 @@
 {{ $currentPage := . }}
 {{ range .Site.Menus.main }}
 {{ if .HasChildren }}
-
-<nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}>
+<nav-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}>
     <a href="#">
         {{ .Pre }}
         <span>{{ .Name }}</span>
@@ -18,7 +17,7 @@
 </nav>
 {{ end }}
 {{ else }}
-<nav-item>
+<nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}>
     <a href="{{ .URL }}">
         {{ .Pre }}
         <span>{{ .Name }}</span>
@@ -26,4 +25,8 @@
 </nav-item>
 {{ end }}
 {{ end }}
+
+<!-- <nav-item>
+     <theme-select></theme-select>
+     </nav-item> -->
 

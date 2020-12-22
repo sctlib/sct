@@ -6,7 +6,7 @@
     --color-dark: black;
     --color-bg: white;
     --color-bg-light: whitesmoke;
-    --color-bg--dark: darkgray;
+    --color-bg-dark: darkgray;
     --color-link: var(--color-blue);
     --color-link-visited: #800080;
     --color-text: var(--color-dark);
@@ -20,4 +20,10 @@
 
     --transition: background-color 200ms ease-in-out;
     --border-radius: 0.2rem;
+}
+
+.Site--dark {
+    --color-bg: var(--color-bg-dark);
+    --color-text: var(--color-light);
+    --color-link: var(--color-wite);
 }

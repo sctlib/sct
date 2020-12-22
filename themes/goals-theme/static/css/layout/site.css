@@ -4,12 +4,26 @@
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    background-color: var(--color-bg);
 }
 @media (min-width: 40rem) {
     .Site {
 	flex-direction: row;
     }
 }
+
+.Site-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* 
+   dark variant for theming
+   see in variables
+*/
+.Site--dark {}
 
 .Site-main {
     padding: var(--size);
