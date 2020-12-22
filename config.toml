@@ -1,4 +1,24 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "sct"
-theme = "index-theme"
+theme = "goals-theme"
+
+[Params]
+editNetlifyCmsUrl = "/edit/#/collections"
+# featured_taxonomies = ["tags", "cities"]
+
+[menu]
+[[menu.main]]
+name = "Goals"
+url = "/goals"
+weight = -110
+
+[[menu.main]]
+name = "Actions"
+url = "/actions"
+weight = -100
+
+[[menu.main]]
+name = "Notes"
+url = "/notes"
+weight = -90
