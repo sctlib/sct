@@ -30,6 +30,8 @@
     width: 100%;
     position: relative;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .Site--home .Site-main {

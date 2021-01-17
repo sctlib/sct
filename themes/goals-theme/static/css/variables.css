@@ -1,6 +1,7 @@
 /* variables */
 :root {
     --size: 1rem;
+    --size-container: 50rem;
 
     --color-blue: blue;
     --color-dark: black;

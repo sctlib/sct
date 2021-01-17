@@ -1,7 +1,7 @@
 ---
 title: Matrix for communications
 slug: matrix-communications
-description: How to communicate with each other on the digital newtorks.
+description: How we can communicate with each other on the digital newtorks.
 date_created: 2021-01-17
 date_updated: 2021-01-17
 ---
@@ -54,7 +54,8 @@ foundation.
 
 ### Communities
 
-A lot of communities or discussing and organizing on the Matrix ecosystem.
+A lot of communities are discussing and organizing on the Matrix
+ecosystem (it is possible to explore them in the element client).
 
 ### French Government
 - https://matrix.org/blog/2018/04/26/matrix-and-riot-confirmed-as-the-basis-for-frances-secure-instant-messenger-app
@@ -192,7 +193,6 @@ for servers and clients.
   ([new](https://matrix.org/blog/2020/10/08/dendrite-is-entering-beta))
   for reference servers implementations
 
-
 ## Users and Groups
 ## a user: @user:server.org
 
@@ -201,7 +201,7 @@ A user, is just like you, an other account to chat with.
 - you are: @your-user:your-server.com
 - an other user is: @other-user:other-server.com
 
-## a group (= a room): #room:server.org
+## a room (= a group): #room:server.org
 
 A user, is just like you, an other account to chat with.
 
@@ -211,6 +211,8 @@ A user, is just like you, an other account to chat with.
 People already host public events on matrix
 https://matrix.org/docs/guides/running-online-events, or discuss large
 projects on a daily basis.
+
+Rooms can be moderated: https://matrix.org/docs/guides/moderation
 
 ## Machine communication
 

@@ -18,11 +18,12 @@ nav {
     }
 }
 nav-item {
-    margin: calc(var(--size) / 2);
+    margin: calc(var(--size) / 4);
 }
+
 nav-item a {
     display: flex;
-    padding: var(--size);
+    padding: calc(var(--size) / 3);
     backgroud-color: transparent;
     transition: var(--transition);
     border-radius: var(--border-radius);
@@ -32,4 +33,9 @@ nav-item a:hover {
 }
 nav-item[active] {
     background-color: var(--color-bg-light);
+}
+@media (min-width: 40rem) {
+    nav-item a {
+	padding: var(--size);
+    }
 }

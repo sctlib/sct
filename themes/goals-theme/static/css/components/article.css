@@ -1,0 +1,14 @@
+.Article {
+    max-width: var(--size-container);
+}
+
+.Article h1,
+.Article h2,
+.Article h3,
+.Article h4 {
+    margin-top: calc(var(--size) * 2);
+}
+
+.Article h1:first-of-type {
+    margin-top: 0;
+}
