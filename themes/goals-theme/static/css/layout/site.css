@@ -29,12 +29,13 @@
     padding: var(--size);
     width: 100%;
     position: relative;
-    flex-grow: 1;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .Site--home .Site-main {
+    flex-grow: 1;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Brassica_napus_%E2%80%94_Flora_Batava_%E2%80%94_Volume_v4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
