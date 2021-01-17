@@ -46,19 +46,25 @@ foundation.
 
 - foundation: https://matrix.org/foundation
 - code: https://github.com/matrix-org
+- blog for news: https://matrix.org/blog/posts
+- read the official FAQ: https://matrix.org/faq
+- official matrix room on matrix [#matrix:matrix.org](https://matrix.to/#/#matrix:matrix.org) 
 
 ## Who is using matrix
 
 ### Communities
 
-A lot of communities 
+A lot of communities or discussing and organizing on the Matrix ecosystem.
 
 ### French Government
 - https://matrix.org/blog/2018/04/26/matrix-and-riot-confirmed-as-the-basis-for-frances-secure-instant-messenger-app
-- https://www.tchap.gouv.fr/#/welcome the client used by the civil servents, *tchap*, a fork of element
+- https://www.tchap.gouv.fr/#/welcome, the client used by some french
+  civil servents, *tchap*, a fork of element.
 
-### Mozilla (editor of Firefox)
-- https://matrix.org/blog/2019/12/19/welcoming-mozilla-to-matrix
+### Mozilla
+
+The organization, editor of the browser Firefox, has its team
+communicating through Matrix https://matrix.org/blog/2019/12/19/welcoming-mozilla-to-matrix
 
 ### German Government
 Currently in test at the ministry of defense
@@ -81,10 +87,9 @@ A chat between you and an other person.
 - a user can send a message to themself
 
 ### public and private rooms (groups)
-A **room**, is a group of multiple users, where messages are only send
+A **room**, is a group of multiple users:
 
-
-- a user can post into a public room
+- a user can post into a public room, and join as many as they would like.
 - a user can post into a private room, encrypted or not
 
 ### videos calls
@@ -150,6 +155,10 @@ as bridging."
 - see the matrix specs, for the Open Standard: https://matrix.org/docs/spec
 
 # Concepts
+
+To better understand how Matrix works, very similar architecture as for emails (servers, clients, network),
+except that it provides encryption by default.
+
 ## server & client
 - a client: the part of the code, that runs on your device (your
   phone, tablet, computer, tv, smartdevice, fridge, iot...)
@@ -169,6 +178,20 @@ or use existing ones.
 Servers, if they decide to be federated, communicate with each other,
 to synchronise the data of their users who are communicating with each
 other.
+
+The matrix foundation provides implementations of the matrix protocol,
+for servers and clients.
+
+- matrix default client = element: https://element.io
+- a list of other known clients, for various platforms:
+  https://matrix.org/clients
+- the matrix foundation provides
+  [synapse](https://github.com/matrix-org/synapse) (original, and
+  current for matrix.org) and
+  [dendrite](https://github.com/matrix-org/dendrite)
+  ([new](https://matrix.org/blog/2020/10/08/dendrite-is-entering-beta))
+  for reference servers implementations
+
 
 ## Users and Groups
 ## a user: @user:server.org
@@ -212,4 +235,18 @@ A group, also has a matrix address, [#sctlib:matrix.org](https://app.element.io/
 
 A community can host their own matrix server (for free), or let the
 people behind matrix do it for them, with [element-matrix-services](https://element.io/matrix-services).
+For a list of known matrix server hosts: https://matrix.org/hosting
 
+
+# matrix.to
+
+To provide everyone with a choice in which client they use to
+communicate on matrix, there is the website https://matrix.to
+
+Enter the room or the user you want to share the address of, and it
+will create for you a like that offers visitors the possibility to
+decide in which client they want to open this communication chat.
+
+For example, a sharable link created with matrix.to, will look like
+this: https://matrix.to/#sctlib:matrix.org for linking to the room
+`#sctlib:matrix.org`
