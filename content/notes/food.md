@@ -12,6 +12,8 @@ Permaculture & agroecology farms:
 
 - https://www.youtube.com/channel/UCsM4_jihNFYe4CtSkXvDR-Q
 
+Stop monoculture and huge farms.
+
 # Local farms, decentralization and resilience
 
 Decentralize production and storage of food so all territories are
