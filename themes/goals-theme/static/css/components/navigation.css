@@ -28,14 +28,15 @@ nav-item a {
     transition: var(--transition);
     border-radius: var(--border-radius);
 }
+@media (min-width: 40rem) {
+    nav-item a {
+	padding: calc(var(--size) / 2);
+    }
+}
+
 nav-item a:hover {
     background-color: var(--color-bg-light);
 }
 nav-item[active] {
     background-color: var(--color-bg-light);
-}
-@media (min-width: 40rem) {
-    nav-item a {
-	padding: var(--size);
-    }
 }

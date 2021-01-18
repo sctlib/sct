@@ -16,6 +16,9 @@
 	{{ end }}
 	{{ with .Params.goals }}
 	<p class="Card-goals">
+	    <span>
+		goals:
+	    </span>
 	    {{ range . }}
 	    <a href="/goals/{{ . }}">{{ . }}</a>
 	    {{ end }}

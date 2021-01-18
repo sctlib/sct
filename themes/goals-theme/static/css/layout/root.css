@@ -18,9 +18,9 @@ html {
     font-family: 'IBM Plex Serif', serif;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 80rem) {
     html {
-	font-size: 20px;
+	font-size: 17px;
     }
 }
 

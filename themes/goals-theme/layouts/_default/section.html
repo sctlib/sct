@@ -1,20 +1,22 @@
 {{ define "main" }}
 
 {{ with .Pages }}
-{{ range .}}
-<article class="Card">
-    <a href="{{ .Permalink }}" class="Card-link">
-	<h2 class="Card-title">
-	    {{ .Params.title }}
-	</h2>
-	{{ with .Params.description }}
-	<p class="Card-description">
-	    {{ . }}
-	</p>
-	{{ end }}
-    </a>
-</article>
-{{ end }}
+<div class="List List--notes">
+    {{ range .}}
+    <article class="Card Card--note">
+	<a href="{{ .Permalink }}" class="Card-link">
+	    <h2 class="Card-title">
+		{{ .Params.title }}
+	    </h2>
+	    {{ with .Params.description }}
+	    <p class="Card-description">
+		{{ . }}
+	    </p>
+	    {{ end }}
+	</a>
+    </article>
+    {{ end }}
+</div>
 {{ end }}
 
 {{ end }}
