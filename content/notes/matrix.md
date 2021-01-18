@@ -192,6 +192,13 @@ for servers and clients.
   [dendrite](https://github.com/matrix-org/dendrite)
   ([new](https://matrix.org/blog/2020/10/08/dendrite-is-entering-beta))
   for reference servers implementations
+  
+## Encryption & devices
+
+There is one encryption key per device.
+
+Therefore you need to authorize each device thare you are using to
+communicate on element/matrix.
 
 ## Users and Groups
 ## a user: @user:server.org
