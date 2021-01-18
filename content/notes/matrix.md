@@ -93,6 +93,8 @@ A **room**, is a group of multiple users:
 - a user can post into a public room, and join as many as they would like.
 - a user can post into a private room, encrypted or not
 
+You can see a list of public rooms here https://view.matrix.org
+
 ### videos calls
 You can use peer-to-peer video/audio communication diretly in matrix, and with jtsi (inside matrix) for group calls.
 
