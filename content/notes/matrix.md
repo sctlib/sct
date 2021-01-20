@@ -112,7 +112,7 @@ Matrix is cross platform, it runs on computer, on the web (without the
 need of any app ever), tablets, linux, apple, windows, android, etc. It can
 litterally run on every existing and future machines.
 
-## You don't need a phone or email to use it
+## no phone or email address needed to use it
 In matrix, you can register a new user without the need of a
 smartphone, a phone number, or even an email address.
 
