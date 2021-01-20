@@ -41,3 +41,8 @@ blockquote {
     display: flex;
     word-break: break-word;
 }
+
+code {
+    word-break: break-all;
+    white-space: break-spaces;
+}
