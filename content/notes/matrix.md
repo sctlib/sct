@@ -55,17 +55,16 @@ foundation.
 ### Communities
 
 A lot of communities are discussing and organizing on the Matrix
-ecosystem (it is possible to explore them in the element client).
+ecosystem (it is possible to explore them in the element client, or here: [view.matrix.org](https://view.matrix.org)).
+
+### Mozilla
+The organization, editor of the browser Firefox, has its team
+communicating through Matrix https://matrix.org/blog/2019/12/19/welcoming-mozilla-to-matrix
 
 ### French Government
 - https://matrix.org/blog/2018/04/26/matrix-and-riot-confirmed-as-the-basis-for-frances-secure-instant-messenger-app
 - https://www.tchap.gouv.fr/#/welcome, the client used by some french
   civil servents, *tchap*, a fork of element.
-
-### Mozilla
-
-The organization, editor of the browser Firefox, has its team
-communicating through Matrix https://matrix.org/blog/2019/12/19/welcoming-mozilla-to-matrix
 
 ### German Government
 Currently in test at the ministry of defense
