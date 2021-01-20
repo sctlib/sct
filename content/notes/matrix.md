@@ -324,6 +324,11 @@ It becomes therefore possible to use the Matrix systems to communicate
 more than "just (encrypted) chats", and take advantages of its
 features to build all sort of projects ([cerulean.matrix.org](https://cerulean.matrix.org/)).
 
+## Develop projects with matrix
+
+- more information about how matrix works https://matrix.org/docs/develop
+- client/server api https://matrix.org/docs/api/client-server
+
 # To sum up
 
 When you use matrix, you protect your pricacy and the one of your
