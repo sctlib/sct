@@ -25,19 +25,23 @@ apps, though it feels its accesibility is improving daily.
 
 Don't get afraid from the difference with the applications you already
 know, you will quickly discover how matrix works by using it with
-friends, familly, groups, strangers, projects and within your
+friends, familly, groups, others, projects and within your
 organisations. It is the best communication tool available, and has
 the potential to eventualy become a standard.
 
+This text is made as presentation, reading it is not required to
+understand or use Matrix!
+
 ## How to start using Matrix?
 
-You can use the element client (more on this later):
+You can use the element client:
 
 1. visit https://app.element.io
 2. create an account (let the default server, https://matrix.org)
-3. login your new user, start chatting in a group
-   (https://app.element.io/#/room/#sctlib:matrix.org) or add create a
-   new conversation with a user you know the matrix address of
+3. login your new user
+
+You can start chatting with a user you know the matrix address of,
+create a new room, or start chatting in a exisitng one.
 
 ## Matrix foundation
 
@@ -67,30 +71,34 @@ communicating through Matrix https://matrix.org/blog/2019/12/19/welcoming-mozill
   civil servents, *tchap*, a fork of element.
 
 ### German Government
-Currently in test at the ministry of defense
+Currently in test at the ministry of defense"
+
 - https://matrix.org/blog/2019/12/24/the-2019-matrix-holiday-update
 - https://www.heise.de/newsticker/meldung/Open-Source-Bundeswehr-baut-eigene-verschluesselte-Messenger-App-4623404.html
 
 ## What can matrix be used for
 
-> Person to person chat, group chat, video calls, share files and
-> medias
+Encrypted chats, one-to-one chats, group chats, video calls, share
+files and medias, and more.
 
 ### user to user(s) communication
 
-A chat between you and an other person.
+A chat between two users.
 
-> Ex: same usage as facebook, signal, telegram, whatsapp, instagram, where 
+> Ex: same usage as facebook, signal, telegram, whatsapp, instagram.
 
 - a user can send a message to an other user
 - a user can send a message to a group of users
 - a user can send a message to themself
 
-### public and private rooms (groups)
-A **room**, is a group of multiple users:
+In the client element, messages between two users are encrypted by default.
 
-- a user can post into a public room, and join as many as they would like.
-- a user can post into a private room, encrypted or not
+### public and private rooms (groups)
+A **room**, is a group of one or multiple users.
+
+Users can join as many rooms as they want, public, private, or secret rooms.
+
+User messages in rooms can be encrypted on room, depending on the settings of the rooms, set by the room administrators.
 
 You can see a list of public rooms here https://view.matrix.org
 
@@ -196,20 +204,24 @@ for servers and clients.
   
 ## Encryption & devices
 
+Messages in matrix *can be* end to end encrypted.
+
+- https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide
+
 There is one encryption key per device.
 
 Therefore you need to authorize each device thare you are using to
 communicate on element/matrix.
 
 ## Users and Groups
-## a user: @user:server.org
+### a user: @user:server.org
 
 A user, is just like you, an other account to chat with.
 
 - you are: @your-user:your-server.com
 - an other user is: @other-user:other-server.com
 
-## a room (= a group): #room:server.org
+### a room (= a group): #room:server.org
 
 A user, is just like you, an other account to chat with.
 
@@ -222,13 +234,95 @@ projects on a daily basis.
 
 Rooms can be moderated: https://matrix.org/docs/guides/moderation
 
-## Machine communication
+## Messages (events)
 
-A user does not have to be a human, it can also be a computer
-software.
+> It is not necessary do read this to use matrix!
 
-Matrix is already used to build secure messaging systems (and more)
-between computers, as every message can have custom data.
+Messages in matrix, are data sent between computers (clients and servers), to communicate some sort of information.
+
+This information is usually text, or a media, that we send to (an) other user(s).
+
+In the element.io matrix client, it is possible to click on every
+message, and select "view source", to inspect what the data of a
+message looks like.
+
+What we see, is a JSON representation of that data `message`; in fact a message is named an `event`.
+
+### non-encrypted event message
+
+The following text, is the data for the `event` (message), with
+`event_id`: `$f0oXbbTG2GBHt4n2uoYQWQ-7dOlviw5ASgK55gY2NvQ`. The `id`
+is a unique string of text that identifies this particular data in the database.
+
+This event has been sent in the room, with `room_id` = `!cqzGJOZxvLdugovYdy:matrix.org`, at the exact unix time `origin_server_ts`.
+
+```
+{
+  "content": {
+    "body": "test",
+    "msgtype": "m.text"
+  },
+  "origin_server_ts": 1611134958847,
+  "sender": "@user:matrix.org",
+  "type": "m.room.message",
+  "unsigned": {
+    "age": 100,
+    "transaction_id": "m1611134958702.69"
+  },
+  "event_id": "$f0oXbbTG2GBHt4n2uoYQWQ-7dOlviw5ASgK55gY2NvQ",
+  "room_id": "!cqzGJOZxvLdugovYdy:matrix.org"
+}
+```
+
+The text, displayed in element.io for this message, is "test" (the data key: `content.body`), and it was sent by user (sender) @user:matrix.org.
+
+We can see that the text, is not encrypted, because we can see it "in clear", written down in the data.
+
+### encrypted event message
+
+Here is an other message's data, sent in an encrypted room:
+
+```
+{
+  "content": {
+    "algorithm": "m.megolm.v1.aes-sha2",
+    "ciphertext": "AwgFEoABT7WqLyj8DEXgsRKvuxqs6avOIa6m7En7St7GGn3JYFI0rR5ZvFSX8NmehSMvtm4bjqpmYw8+I1kDJLgeG7NgqermVeK6O3sLt8M0hMVCrORApp7ORqc+Dmdx1uyMIHl+ShGIhw8xFRQ71YEKY2FqDl0PDIcI8SrLj/i+O/deLU12y/q3ocdxDBhzmbTTWZB8gS/SVvrZzTDQPXn37+ZqeHUOIgdWNm5T+qYxxW3axDnLm9XKZ5Se6BUgGQQcauZFW+tLyl+TzAg",
+    "device_id": "VRCKJQKYRK",
+    "sender_key": "ucG18wH9TNW81JzFQjqGHz3LRcq4fI3UeyExgop5ZBo",
+    "session_id": "f1TvRg8IVRyFmGNQuWHlyXV5YSiQm/za6NF2By5zcI0"
+  },
+  "event_id": "$1711135523111267Mtrpe:matrix.org",
+  "origin_server_ts": 1611135523044,
+  "sender": "@user:matrix.org",
+  "type": "m.room.encrypted",
+  "unsigned": {
+    "age": 98,
+    "transaction_id": "m1611135522895.70"
+  },
+  "room_id": "!pBNqtbBiFxFoDwLdsF:matrix.org"
+}
+```
+
+In this data, the key `content.body` does not exist, there is no text in clear.
+
+There are some new keys:
+
+- `content.algorithm`, specifying which encryption algorithm as been used to encrypt the data of this message
+- `content.ciphertext`, the text, content of our message (`content.body`, in non encrypted messages)
+- `content.device_id`, which device (computer), of the user `sender` (@user:matrix.org), was used to send, and encrypt, this message
+- `content.sender_key`, the user's key, that was used to encrypt this message.
+
+Matrix, its clients and server implentation can offer this sort of
+information and transparency to users. Because the code is open, it is
+possible to learn and improve how things work.
+
+### custom (encrypted) event message
+
+The data stored under the `content.` keys of an event message, can be customized (by the developers/users).
+
+It becomes therefore possible to use the Matrix systems to communicate
+more than "just (encrypted) chats", and take advantages of its
+features to build all sort of projects ([cerulean.matrix.org](https://cerulean.matrix.org/)).
 
 # To sum up
 
