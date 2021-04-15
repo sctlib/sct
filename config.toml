@@ -40,3 +40,13 @@ weight = -80
 name = "(chat)"
 url = "https://matrix.to/#/#sctlib:matrix.org"
 weight = -70
+
+[[menu.main]]
+name = "(content)"
+url = "https://github.com/sctlib"
+weight = -60
+
+[[menu.main]]
+name = "(git)"
+url = "https://gitlab.io/sctlib"
+weight = -50
